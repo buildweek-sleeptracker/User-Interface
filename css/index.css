@@ -11,8 +11,8 @@ font-family: 'Bitter', serif;
 
 
 * {
-	background-color: #868EC6;
-	width:100%;
+	background-color: #868EC6; 
+	width: 100%;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -52,7 +52,7 @@ h1 {
 .slogan {
 	display: flex;
 	width: 70%;
-	margin:0 10% 0 10%;
+	margin:0 15% 0 15%;
 	text-align: center;
 	font-size: 1.6rem;
 	color: #432923;
@@ -65,6 +65,7 @@ h1 {
 	display: flex;
 	
 	justify-content: center;
+	
  }
  header {
 	 width: 100%;
@@ -76,14 +77,30 @@ h1 {
  }
 
 
- .icons{
-	 padding-top:3%;
-	 display: flex;
-	 justify-content: center;
-}
-.icons a{
-	text-decoration: none;
-}
 img {
 	border-radius: 5%;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+p{
+	font-size: 1.6rem;
+}
+
+
+
+
+.icons{
+	padding-top:3%;
+	display: flex;
+	justify-content: center;
+}
+.icons a {	
+   text-decoration: none;
+}
+
+.copyright{
+	text-align: center;
 }
