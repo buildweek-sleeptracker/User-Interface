@@ -16,6 +16,8 @@ body {
   background-image: url("../img/sleepmood.jpg");
   background-attachment: fixed;
   background-size: cover;
+  animation-name: fade-in;
+  animation-duration: 3s;
 }
 h1,
 h2,
@@ -94,13 +96,19 @@ h5 {
 }
 @media only screen and (max-width: 500px) {
   #home header .dwnld-btn {
-    padding: 1% 2% 1% 2%;
+    padding: 2% 6% 2% 6%;
+    margin-bottom: 4%;
   }
 }
 #home header .dwnld-btn a {
   font-size: 1.4rem;
   text-decoration: none;
   color: #191D37;
+}
+@media only screen and (max-width: 500px) {
+  #home header .dwnld-btn a {
+    font-size: 1.6rem;
+  }
 }
 #home header .dwnld-btn:hover {
   background-color: #868EC6;
@@ -151,6 +159,11 @@ h5 {
     margin-left: 0;
   }
 }
+@media only screen and (max-width: 500px) {
+  .main-content .tent {
+    display: none;
+  }
+}
 .main-content .inverse-content {
   border-bottom: 1px solid #868EC6;
   margin-bottom: 3%;
@@ -159,6 +172,11 @@ h5 {
   width: 60%;
   opacity: 0.68;
   border-radius: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .main-content .inverse-content .graph_image {
+    width: 91%;
+  }
 }
 .main-content .bottom-header h2 {
   color: #B07568;
@@ -189,7 +207,7 @@ h5 {
 .main-content .onBoarding .destination h4 {
   color: #EDEBE3;
   font-size: 2rem;
-  margin-bottom: 40%;
+  margin-bottom: 30%;
 }
 @media only screen and (max-width: 500px) {
   .main-content .onBoarding .destination h4 {
@@ -269,4 +287,12 @@ footer i {
   font-size: 2rem;
   color: #B5B7C5;
   margin-left: 1%;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }

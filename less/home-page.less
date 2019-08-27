@@ -19,6 +19,8 @@
     background-image: url("../img/sleepmood.jpg"); 
     background-attachment: fixed;
     background-size: cover;
+    animation-name: fade-in;
+    animation-duration: 3s;
   }
   h1,
   h2,
@@ -96,13 +98,17 @@
         border-radius:5px;
         background-color: #B07568;
         @media only screen and (max-width: 500px){
-          padding: 1% 2% 1% 2%;
+          padding: 2% 6% 2% 6%;
+          margin-bottom: 4%;
         }
           a{
             font-size:1.4rem;
             text-decoration:none;
             color: #191D37;
+            @media only screen and (max-width: 500px){
+              font-size: 1.6rem;
             }
+          }//closes a
       }
       .dwnld-btn:hover {
           background-color:  #868EC6;
@@ -118,17 +124,17 @@
     // background-color:#393b5d;
   
     .content-section {
-      @media only screen and (max-width: 600px) {
-        body {
-          width:100%;
-        }
-      }
       width:90%;
       margin:4% 0 4% 5%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
-   
+      @media only screen and (max-width: 600px) {
+        body {
+          width:100%;
+        }
+      }
+
       .text-content{
         width:45%;
         margin:1% 1% 2% 0;
@@ -164,24 +170,24 @@
       
     } // closes content-section
    
-
+    .tent{
+      @media only screen and (max-width: 500px){
+        display: none;
+      }
+    }//closes tent
 
     .inverse-content{
       border-bottom: 1px solid #868EC6;
       margin-bottom:3%;
 
-          .img-content{
-           
-              }//closes img-content
-    
-        
-      
-     
       .graph_image {
         width:60%;
         opacity: .68;
         border-radius: 20px;
-      }
+        @media only screen and (max-width: 500px){
+          width:91%;
+        }
+      }//graph img
       
     }
     
@@ -213,7 +219,7 @@
         h4{
           color:#EDEBE3;
           font-size: 2rem;
-          margin-bottom: 40%;
+          margin-bottom: 30%;
           @media only screen and (max-width: 500px){
             margin-bottom: 5%;
             font-size: 2.4
@@ -309,6 +315,9 @@
             margin-left:1%;
             
           }
+  }// clsoes footer
+  
+  @keyframes fade-in {
+    from {opacity: 0.1;}
+    to {opacity: 1;}
   }
-  
-  
