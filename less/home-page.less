@@ -117,11 +117,11 @@
     // background-color:#393b5d;
   
     .content-section {
-      width:90%;
-      margin:4% 0 4% 5%;
+      // width:90%;
+      margin:0 0 0 5%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: space-between;
       @media only screen and (max-width: 500px) {
         body {
           width:100%;
@@ -129,13 +129,15 @@
       }
 
       .text-content{
-        width:45%;
+        width:48%;
         margin:1% 1% 2% 0;
         line-height:2;
         @media only screen and (max-width: 500px){
           width:90%;
         }
-        
+        .img-content{
+          width:48%;
+        }
         h2{
           color:#EDEBE3;
           font-size: 2.4rem;
@@ -159,6 +161,8 @@
     } // closes content-section
    
     .tent{
+      height: 70%;
+      padding-bottom:0;
       @media only screen and (max-width: 500px){
         display: none;
       }
@@ -167,20 +171,18 @@
     .inverse-content{
       border-bottom: 1px solid #868EC6;
       margin-bottom:3%;
-
-      @media only screen and (max-width: 500px){
-        order: 1;
-      }
+      display:flex;
+      justify-content: space-evenly;
+  
       .img-content{
         padding-right:0;
       }
       .graph_image {
-        width:60%;
+        // width:55%;
         opacity: .68;
         border-radius: 20px;
         @media only screen and (max-width: 500px){
           width:91%;
-          order: 2;
         }
       }//graph img
       
@@ -310,9 +312,18 @@
             margin-left:1%;
             
           }
-  }// clsoes footer
+  }// closes footer
   
   @keyframes fade-in {
     from {opacity: 0.1;}
     to {opacity: 1;}
+  }
+
+  .a-content-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #EDEBE3;
+    font-size: 1.6rem;
+
   }

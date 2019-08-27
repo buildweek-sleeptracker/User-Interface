@@ -113,11 +113,10 @@ h5 {
   margin: 0 5% 0 5%;
 }
 .main-content .content-section {
-  width: 90%;
-  margin: 4% 0 4% 5%;
+  margin: 0 0 0 5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 500px) {
   .main-content .content-section body {
@@ -125,7 +124,7 @@ h5 {
   }
 }
 .main-content .content-section .text-content {
-  width: 45%;
+  width: 48%;
   margin: 1% 1% 2% 0;
   line-height: 2;
 }
@@ -133,6 +132,9 @@ h5 {
   .main-content .content-section .text-content {
     width: 90%;
   }
+}
+.main-content .content-section .text-content .img-content {
+  width: 48%;
 }
 .main-content .content-section .text-content h2 {
   color: #EDEBE3;
@@ -154,6 +156,10 @@ h5 {
     margin-left: 0;
   }
 }
+.main-content .tent {
+  height: 70%;
+  padding-bottom: 0;
+}
 @media only screen and (max-width: 500px) {
   .main-content .tent {
     display: none;
@@ -162,24 +168,19 @@ h5 {
 .main-content .inverse-content {
   border-bottom: 1px solid #868EC6;
   margin-bottom: 3%;
-}
-@media only screen and (max-width: 500px) {
-  .main-content .inverse-content {
-    order: 1;
-  }
+  display: flex;
+  justify-content: space-evenly;
 }
 .main-content .inverse-content .img-content {
   padding-right: 0;
 }
 .main-content .inverse-content .graph_image {
-  width: 60%;
   opacity: 0.68;
   border-radius: 20px;
 }
 @media only screen and (max-width: 500px) {
   .main-content .inverse-content .graph_image {
     width: 91%;
-    order: 2;
   }
 }
 .main-content .bottom-header h2 {
@@ -299,4 +300,11 @@ footer i {
   to {
     opacity: 1;
   }
+}
+.a-content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: #EDEBE3;
+  font-size: 1.6rem;
 }
