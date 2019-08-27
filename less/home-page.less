@@ -26,28 +26,36 @@
     width:100%;
     display:flex;
     justify-content:flex-end;
-    background-color: #191D37;
+    //background-color: #191D37;
     margin: auto;
-    margin-top: -35px;
-    border: 1px solid  #B07568;
+    margin-top: -20px;
+    //border: 1px solid  #B07568;
       a{
         font-size:1.4rem;
         margin:1.5% 2% .3% 1%;
         padding-left:5%;
         text-decoration:none;
-        color: #DADBE2;
+        color: #EDEBE3;
+      }
+      a:hover{
+          color:  #868EC6;
       }
     } //closes nav
   
+    
     header{
       width:90%;
       text-align:center;
       margin-top:5%;
       margin-left:5%;
+      border-bottom: 1px solid #868EC6;
       .header-img{
         font-size: 8rem;
         color:  #868EC6;
         margin-bottom: 0;
+      }
+      .header-img:hover{
+          color: #B07568;
       }
       h1{
         color: #868EC6;
@@ -89,7 +97,7 @@
       margin:4% 0 4% 5%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
    
       .text-content{
         width:45%;
@@ -97,27 +105,34 @@
         line-height:2;
         
         h2{
-          color:white;
-          font-size: 2rem;
+          color:#EDEBE3;
+          font-size: 2.4rem;
           margin-bottom:10%;
         }//closes h2
         p{
-          color:white;
-          font-size:1.3rem;
+          color:#EDEBE3;
+          font-size: 1.6rem;
         }
         li{
           margin-left: 10%;
-          color:white;
-          font-size:1.3rem;
+          color:#EDEBE3;
+          font-size: 2rem;
           line-height: 2.5;
         }
       } // closes text-content
     } // closes content-section
     
     .inverse-content{
+        width: 45%;
       border-bottom: 1px solid #868EC6;
       .img-content{
+          
         margin-bottom:3%;
+      }
+
+      .graph_image {
+        opacity: .68;
+        border-radius: 20px;
       }
       
     }
@@ -140,14 +155,24 @@
         // margin:4% 0 0 4%;
         line-height:1.5;
         h4{
-          color:white;
-          font-size: 1.5rem;
-          margin-bottom:10%;
+          color:#EDEBE3;
+          font-size: 2rem;
+          margin-bottom: 40%;
         }// closes h4
         p{
-          color:white;
-          font-size:1.2rem;
+          color: #EDEBE3;
+          font-size:1.6rem;
           line-height:1.6;
+        }
+        .w3-border{
+            background-color: #F4F4F6;
+            border-radius: 5px;
+        }
+        .w3-1{
+            background-color:#786D4B;
+            border:1px;
+            size:1px;
+            border-radius: 5px;
         }
       }//closes destination
     }//closes on boarding
@@ -159,13 +184,13 @@
   
   .contact{
     width:100%;
-    background-color: #1a1c39;
+    background-color: #14162A;
     text-align:center;
     margin-top:3%;
     display:flex;
     flex-direction: column;
     h4{
-      color: #868EC6;
+      color: #EDEBE3;
       margin-top: 5%;
       font-size:2.5rem;
       margin-bottom: 2%;
@@ -205,13 +230,15 @@
     }
   }
   
+
+
   footer{
-    background-color: #1a1c39;
+    background-color: #14162A;
     padding-bottom: 2%;
     text-align:center;
     p{
       font-size: 1.5rem;
-      color: #868EC6;
+      color: #EDEBE3;
       text-align:center;
       
     }
