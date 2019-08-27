@@ -168,9 +168,11 @@ h5 {
     order: 1;
   }
 }
+.main-content .inverse-content .img-content {
+  padding-right: 0;
+}
 .main-content .inverse-content .graph_image {
   width: 60%;
-  padding-right: 0;
   opacity: 0.68;
   border-radius: 20px;
 }
