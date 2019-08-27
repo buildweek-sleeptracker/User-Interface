@@ -1,3 +1,10 @@
+@media only screen and (max-width: 500px) {
+  * {
+    color: red;
+    }
+    
+  }
+
 * {
     box-sizing: border-box;
     height: auto;
@@ -28,14 +35,29 @@
     justify-content:flex-end;
     //background-color: #191D37;
     margin: auto;
-    margin-top: -20px;
+    margin-top: -10px;
     //border: 1px solid  #B07568;
+    @media only screen and (max-width: 500px){
+      width:100%;
+      margin-top: 4%;
+      display:flex;
+      flex-direction: column;
+    }//closes media q
       a{
         font-size:1.4rem;
         margin:1.5% 2% .3% 1%;
         padding-left:5%;
         text-decoration:none;
         color: #EDEBE3;
+        @media only screen and (max-width: 500px){
+          width: 90%;
+          font-size: 3rem;
+          text-align: center;
+          margin-left:5%;
+          margin-right: 0;
+          padding-bottom: 2%;
+          border-bottom: 1px solid #868EC6;
+        }//closes mediaq
       }
       a:hover{
           color:  #868EC6;
@@ -73,6 +95,9 @@
         font-family: 'Roboto', sans-serif;
         border-radius:5px;
         background-color: #B07568;
+        @media only screen and (max-width: 500px){
+          padding: 1% 2% 1% 2%;
+        }
           a{
             font-size:1.4rem;
             text-decoration:none;
@@ -93,6 +118,11 @@
     // background-color:#393b5d;
   
     .content-section {
+      @media only screen and (max-width: 600px) {
+        body {
+          width:100%;
+        }
+      }
       width:90%;
       margin:4% 0 4% 5%;
       display: flex;
@@ -103,6 +133,9 @@
         width:45%;
         margin:1% 1% 2% 0;
         line-height:2;
+        @media only screen and (max-width: 500px){
+          width:90%;
+        }
         
         h2{
           color:#EDEBE3;
@@ -118,19 +151,34 @@
           color:#EDEBE3;
           font-size: 2rem;
           line-height: 2.5;
+          @media only screen and (max-width: 500px){
+            margin-left:0;
+          }
         }
       } // closes text-content
+      // @media only screen and (max-width: 500px){
+      //  .img-content:first-child{
+      //   display:none;
+      // }//closes img-content child
+      // }//closes media query
+      
     } // closes content-section
-    
-    .inverse-content{
-        width: 45%;
-      border-bottom: 1px solid #868EC6;
-      .img-content{
-          
-        margin-bottom:3%;
-      }
+   
 
+
+    .inverse-content{
+      border-bottom: 1px solid #868EC6;
+      margin-bottom:3%;
+
+          .img-content{
+           
+              }//closes img-content
+    
+        
+      
+     
       .graph_image {
+        width:60%;
         opacity: .68;
         border-radius: 20px;
       }
@@ -150,14 +198,26 @@
       margin-bottom:5%; 
       display: flex;
       justify-content:space-evenly;
+      @media only screen and (max-width: 500px){
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+      }//closes media query
       .destination{
         width: 25%;
         // margin:4% 0 0 4%;
         line-height:1.5;
+        @media only screen and (max-width: 500px){
+          width:90%;
+        }
         h4{
           color:#EDEBE3;
           font-size: 2rem;
           margin-bottom: 40%;
+          @media only screen and (max-width: 500px){
+            margin-bottom: 5%;
+            font-size: 2.4
+          }
         }// closes h4
         p{
           color: #EDEBE3;
