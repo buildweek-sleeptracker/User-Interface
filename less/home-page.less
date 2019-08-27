@@ -113,7 +113,7 @@
   
   .main-content {
     width:90%;
-    margin: 0 5% 0 5%;  
+    margin: 2% 5% 2% 5%;  
     // background-color:#393b5d;
   
     .content-section {
@@ -173,17 +173,21 @@
       border-bottom: 1px solid #868EC6;
       margin-bottom:3%;
     .text-content{
-      width:45%
+      
+      
     }
       .img-content{
         width:45%;
         padding-right:0;
+        @media only screen and (max-width: 500px){
+          width:100%;
+        }
       }
       .graph_image {
         opacity: .68;
         border-radius: 20px;
         @media only screen and (max-width: 500px){
-          width:91%;
+          width:100%;
         }
       }//graph img
       
@@ -326,4 +330,11 @@
     justify-content: space-evenly;
     color: #EDEBE3;
     font-size: 1.6rem;
+   @media only screen and (max-width: 500px){
+     
+    img {
+        max-width:100%;
+        
+      }
+    }
   }

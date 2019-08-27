@@ -110,7 +110,7 @@ h5 {
 }
 .main-content {
   width: 90%;
-  margin: 0 5% 0 5%;
+  margin: 2% 5% 2% 5%;
 }
 .main-content .content-section {
   display: flex;
@@ -168,12 +168,14 @@ h5 {
   border-bottom: 1px solid #868EC6;
   margin-bottom: 3%;
 }
-.main-content .inverse-content .text-content {
-  width: 45%;
-}
 .main-content .inverse-content .img-content {
   width: 45%;
   padding-right: 0;
+}
+@media only screen and (max-width: 500px) {
+  .main-content .inverse-content .img-content {
+    width: 100%;
+  }
 }
 .main-content .inverse-content .graph_image {
   opacity: 0.68;
@@ -181,7 +183,7 @@ h5 {
 }
 @media only screen and (max-width: 500px) {
   .main-content .inverse-content .graph_image {
-    width: 91%;
+    width: 100%;
   }
 }
 .main-content .bottom-header h2 {
@@ -308,4 +310,9 @@ footer i {
   justify-content: space-evenly;
   color: #EDEBE3;
   font-size: 1.6rem;
+}
+@media only screen and (max-width: 500px) {
+  .a-content-section img {
+    max-width: 100%;
+  }
 }
