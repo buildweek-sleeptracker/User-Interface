@@ -113,10 +113,9 @@ h5 {
   margin: 0 5% 0 5%;
 }
 .main-content .content-section {
-  margin: 0 0 0 5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 @media only screen and (max-width: 500px) {
   .main-content .content-section body {
@@ -124,7 +123,7 @@ h5 {
   }
 }
 .main-content .content-section .text-content {
-  width: 48%;
+  width: 45%;
   margin: 1% 1% 2% 0;
   line-height: 2;
 }
@@ -134,7 +133,7 @@ h5 {
   }
 }
 .main-content .content-section .text-content .img-content {
-  width: 48%;
+  width: 45%;
 }
 .main-content .content-section .text-content h2 {
   color: #EDEBE3;
@@ -168,10 +167,12 @@ h5 {
 .main-content .inverse-content {
   border-bottom: 1px solid #868EC6;
   margin-bottom: 3%;
-  display: flex;
-  justify-content: space-evenly;
+}
+.main-content .inverse-content .text-content {
+  width: 45%;
 }
 .main-content .inverse-content .img-content {
+  width: 45%;
   padding-right: 0;
 }
 .main-content .inverse-content .graph_image {
@@ -235,7 +236,7 @@ h5 {
   size: 1px;
   border-radius: 5px;
 }
-.contact {
+#contact {
   width: 100%;
   background-color: #14162A;
   text-align: center;
@@ -243,39 +244,39 @@ h5 {
   display: flex;
   flex-direction: column;
 }
-.contact h4 {
+#contact h4 {
   color: #EDEBE3;
   margin-top: 5%;
   font-size: 2.5rem;
   margin-bottom: 2%;
 }
-.contact .signup-btn {
+#contact .signup-btn {
   margin: 2% 1% 5% 2%;
   padding: 0.5% 2% 0.5% 2%;
   font-family: 'Roboto', sans-serif;
   border-radius: 5px;
   background-color: #B07568;
 }
-.contact .signup-btn a {
+#contact .signup-btn a {
   color: #191D37;
   text-decoration: none;
   font-size: 1.2rem;
 }
-.contact .signup-btn:hover {
+#contact .signup-btn:hover {
   background-color: #868EC6;
 }
-.contact .message-btn {
+#contact .message-btn {
   padding: 0.6% 1% 0.5% 1.1%;
   margin-left: 4%;
   font-family: 'Roboto', sans-serif;
   background-color: #B07568;
   border-radius: 5px;
 }
-.contact .message-btn a {
+#contact .message-btn a {
   color: #191D37;
   text-decoration: none;
 }
-.contact .message-btn:hover {
+#contact .message-btn:hover {
   background-color: #868EC6;
 }
 footer {
