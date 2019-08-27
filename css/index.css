@@ -324,6 +324,7 @@ footer i {
 .a-content-section .img-text-content img {
   border-radius: 15px;
   object-fit: cover;
+  border: 2px solid #868EC6;
 }
 @media only screen and (max-width: 500px) {
   .a-content-section p {
