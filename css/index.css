@@ -82,7 +82,7 @@ h5 {
 }
 #home header p {
   color: #868EC6;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin-bottom: 4%;
 }
 .main-content {
@@ -115,6 +115,9 @@ h5 {
 }
 .main-content .dwnld-btn:hover {
   background-color: #191D37;
+}
+.main-content .dwnld-btn:hover a {
+  color: #EDEBE3;
 }
 .main-content .content-section {
   display: flex;
