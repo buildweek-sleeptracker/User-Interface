@@ -178,6 +178,7 @@ h5 {
   }
 }
 .main-content .inverse-content .graph_image {
+  width: 100%;
   opacity: 0.68;
   border-radius: 20px;
 }
