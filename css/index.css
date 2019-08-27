@@ -51,7 +51,7 @@ h5 {
     margin-left: 5%;
     margin-right: 0;
     padding-bottom: 2%;
-    border-bottom: 1px solid #868EC6;
+    border-bottom: 2px solid #776D4B;
   }
 }
 #home nav a:hover {
@@ -62,7 +62,10 @@ h5 {
   text-align: center;
   margin-top: 5%;
   margin-left: 5%;
-  border-bottom: 1px solid #868EC6;
+  border-bottom: 2px solid #776D4B;
+}
+#home header img {
+  width: 20%;
 }
 #home header .header-img {
   font-size: 8rem;
@@ -86,8 +89,9 @@ h5 {
   padding: 0.5% 3% 0.5% 3%;
   margin-bottom: 2%;
   font-family: 'Roboto', sans-serif;
-  border-radius: 5px;
+  border-radius: 5px ;
   background-color: #B07568;
+  border: none;
 }
 @media only screen and (max-width: 500px) {
   #home header .dwnld-btn {
@@ -126,6 +130,8 @@ h5 {
   width: 45%;
   margin: 1% 1% 2% 0;
   line-height: 2;
+  border-radius: 10px;
+  background-color: #868EC6;
 }
 @media only screen and (max-width: 500px) {
   .main-content .content-section .text-content {
@@ -158,6 +164,7 @@ h5 {
 .main-content .tent {
   height: 70%;
   padding-bottom: 0;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 500px) {
   .main-content .tent {
@@ -165,8 +172,11 @@ h5 {
   }
 }
 .main-content .inverse-content {
-  border-bottom: 1px solid #868EC6;
+  background: #14162A;
+  border-radius: 10px;
+  border-bottom: 2px solid #776D4B;
   margin-bottom: 3%;
+  justify-content: space-around;
 }
 .main-content .inverse-content .img-content {
   width: 45%;
@@ -264,6 +274,7 @@ h5 {
   font-family: 'Roboto', sans-serif;
   border-radius: 5px;
   background-color: #B07568;
+  border: none;
 }
 #contact .signup-btn a {
   color: #191D37;
@@ -277,6 +288,7 @@ h5 {
   padding: 0.6% 1% 0.5% 1.1%;
   margin-left: 4%;
   font-family: 'Roboto', sans-serif;
+  border: none;
   background-color: #B07568;
   border-radius: 5px;
 }
