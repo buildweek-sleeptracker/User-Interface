@@ -179,7 +179,7 @@ h5 {
 }
 .main-content .inverse-content .graph_image {
   width: 100%;
-  padding: 5%;
+  margin: 5%;
   opacity: 0.68;
   border-radius: 20px;
 }
@@ -219,7 +219,7 @@ h5 {
 }
 .main-content .onBoarding .destination h4 {
   color: #EDEBE3;
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-bottom: 10%;
 }
 @media only screen and (max-width: 500px) {
@@ -234,7 +234,7 @@ h5 {
   line-height: 1.6;
 }
 .main-content .onBoarding .destination .w3-border {
-  margin-top: 20%;
+  margin: 20% 0;
   background-color: #F4F4F6;
   border-radius: 10px;
 }
@@ -317,7 +317,18 @@ footer i {
   color: #EDEBE3;
   font-size: 1.6rem;
 }
+.a-content-section .img-text-content {
+  display: flex;
+  flex-direction: column;
+}
+.a-content-section .img-text-content img {
+  border-radius: 15px;
+  object-fit: cover;
+}
 @media only screen and (max-width: 500px) {
+  .a-content-section p {
+    font-size: 2rem;
+  }
   .a-content-section img {
     max-width: 100%;
   }
