@@ -183,6 +183,11 @@ h5 {
   line-height: 2;
   border-radius: 10px;
 }
+@media (max-width:800px) {
+  .main-content .content-section .text-content {
+    width: 90%;
+  }
+}
 @media (max-width:500px) {
   .main-content .content-section .text-content {
     width: 90%;
@@ -212,6 +217,11 @@ h5 {
   margin-top: 7%;
   padding-bottom: 0;
   border-radius: 5px;
+}
+@media (max-width:800px) {
+  .main-content .tent {
+    height: 70%;
+  }
 }
 @media (max-width:500px) {
   .main-content .tent {
@@ -257,6 +267,11 @@ h5 {
   opacity: 0.68;
   border-radius: 20px;
 }
+@media (max-width:800px) {
+  .main-content .inverse-content .graph_image {
+    padding-top: 30%;
+  }
+}
 @media (max-width:500px) {
   .main-content .inverse-content .graph_image {
     width: 90%;
@@ -266,7 +281,7 @@ h5 {
 .main-content .bottom-header h2 {
   color: #EDEBE3;
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin-top: 5%;
 }
 .main-content .onBoarding {

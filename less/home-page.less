@@ -93,16 +93,9 @@
     }//closes download button
     .dwnld-btn:hover {
         background-color:@blue;
-        a{
-          // color:@text-color;
-        }// closes a
-        
     }//closes dwnld btn
   
     .content-section {
-      // width:90%;
-      // margin:0 0 0 5%;
-      
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
@@ -119,6 +112,9 @@
         margin:4% 1% 2% 0;
         line-height:2;
         border-radius: 10px;
+        @media @tablet{
+          width: 90%;
+        }
        @media @mobile{
           width:90%;
         }//closes media q
@@ -141,6 +137,7 @@
       border-radius: 10px;
       height: 40%;
       box-shadow: 0 0 8px 1px @gold;
+      
     }
     .tent{
       width:400px;
@@ -148,6 +145,9 @@
       margin-top:7%;
       padding-bottom:0;
       border-radius: 5px;
+      @media @tablet{ 
+        height: 70%;
+      }
       @media @mobile{
         display: none;
       }
@@ -184,6 +184,9 @@
         margin: 5%;
         opacity: .68;
         border-radius: 20px;
+        @media @tablet{
+          padding-top:30%;
+        }
         @media @mobile{
           width:90%;
           margin-right:5%;
@@ -196,7 +199,7 @@
     h2{
         color: @text-color;  
         text-align: center;
-        font-size: 2.8rem;   
+        font-size: 3rem;   
         margin-top:5%;
       }//closes h2
 }//closes bottom header
@@ -212,7 +215,6 @@
       }//closes media query
       .destination{
         width: 25%;
-        // margin:4% 0 0 4%;
         line-height:1.5;
         display:flex;
         flex-direction: column;
@@ -328,12 +330,6 @@
             width:30%;
           }
     }
-    // h4{
-    //   color: #EDEBE3;
-    //   margin-top: 3%;
-    //   font-size:2.5rem;
-    //   margin-bottom: 2%;
-    // }//closes h4
     .signup-btn{
       margin:2% 1% 5% 2%;
       padding:.7% 3%;
@@ -383,6 +379,7 @@
   
   
   /**************** ABOUT PAGE *******************/
+
   header h1{
     color:@text-color;
     font-size:6rem;
@@ -422,12 +419,6 @@
     }
   }
 
-
-
-
-
-
-  
 
   // Animation
   @keyframes fade-in {
