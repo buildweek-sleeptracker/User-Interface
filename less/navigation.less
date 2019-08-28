@@ -1,11 +1,17 @@
-#home{
+
     nav{
-    width:95%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: @darkblue;
     display:flex;
     justify-content:flex-end;
     //background-color: #191D37;
-    margin-top: -10px;
-    //border: 1px solid  #B07568;
+    margin-top: -18px;
+    padding: 2px;
+    opacity: 1;
+    z-index: 10;
+    border: 1px solid @gold;
     @media only screen and (max-width: 500px){
       width:100%;
       margin-top: 4%;
@@ -31,5 +37,5 @@
       a:hover{
           color:  #868EC6;
       }
-    } //closes nav
-}// closes home
+     
+} // closes nav
