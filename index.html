@@ -11,53 +11,109 @@
     <title>Sleepmood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
- 
-      <nav>
-          <a href="#home">Home</a>
-          <a href="about.html">About</a>
-          <a href="#login">Log In</a>
-          <a href="#contact">Contact</a>
-      </nav>   
-      
-      <header>
-        <div class="moon-icon">
-          <i class="fas fa-cloud-moon" alt="Sleepmood logo."></i></div>
-             <h1>
-               Sleepmood
-             </h1>
-  </header>
   <body>
-    <div class="container">
-        <div class="slogan">
-            
-            <p>Not everyone needs 8 hours of sleep, but how do you know if you’re someone lucky enough to need only 6? 
-            Or an unlucky one that needs 10!? Enter Sleepmood.</p>
-        </div>
-
-        <div class="main-content">
-           
-            <img src="img/graph.png" alt="Graph of sleep over time">
-                <div class="sleep_history">
-                  <h2>Your Sleep History</h2> 
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est illo iure debitis ipsum reprehenderit fugiat placeat ipsam in repellendus! Explicabo esse soluta, unde labore perspiciatis deserunt fugit sed necessitatibus animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  </p>
-                </div>                 
-        </div>
-    </div>  
-
-	<footer>
-			<div class="icons">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-					
+      <div id="home">
+         <nav class="links">
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Login</a>
+        </nav>
+      
+        <header>
+                    <img src="img/sleeplogo.png">
+                    <p>A sleep tracker and mood web app</p>
+                    
+            </div>
+        </header>
       </div>
-    </footer>
-    
-    <div class="copyright">
-      <p>Copyright Sleepmood</p>
-    </div>
+       
+  
+    <div class="main-content">
+   
+            <section class="content-section">
+              <div class="text-content">
+                <h2>Why Should You Use Sleepmood?</h2>
+                <p>We all sleep, but few of us feel rested. Sleepmood enables you to analyze and repair your sleeping habits, based purely off of how you feel. </p> 
+                <button class="dwnld-btn"><a href>Download</a></button>
+              </div>
+              <div class="img-content">
+                <img class ="tent" src="img/tent.jpg" alt="Tent at Night" width="400px">
+              </div>
+            </section>
+            <section class="content-section inverse-content">
+              <div class="img-content">
+                  <img class ="graph_image" src="img/graph.png" alt="Graph of sleep over time">
+              </div>
+              <div class="text-content">
+                <h2>Features</h2>
+                
+                  <li>Track and create a sleep entry</li> 
+                  <li>Rate your mood</li>
+                  <li>Analyze your data</li>
+                
+              </div>
+             
+            </section>
 
-</body>
+            <div class="bottom-header">
+                <h2>The Sleepmood Three Step Process</h2>
+            </div>
+
+   <section class="onBoarding">
+  
+      <div class="destination">
+        <div class="destination-text">
+          <h4>First Step</h4>
+          <p>Tell Sleepmood when you are going to bed</p>
+          <p>Rate your mood when going to sleep using the emoji score system</p>
+        </div>  
+        <div class="w3-border">
+            <div class="w3-1" style="height:20px;width:33%"></div>
+        </div>
+      </div>
+        
+      
+      <div class="destination">
+         <div class="destination-text">
+         <h4>Second Step</h4>
+         <p>Tell Sleepmood when you wake up</p>
+         <p>Rate your mood for the day using the emoji scoring system</p>
+        </div>
+          <div class="w3-border">
+              <div class="w3-1" style="height:20px;width:66%"></div>
+          </div>
+      </div>
+      <div class="destination">
+        <div class="destination-text">
+           <h4>Third Step</h4>         
+          <p>Rate your overall mood for the day using the emoji score system</p>
+        </div>      
+          <div class="w3-border">
+            <div class="w3-1" style="height:20px;width:95%"></div>
+          </div>
+      </div>
+    </section>
+    </div>
+    
+    
+      <section id="contact">
+        <div>
+          <h4>Get In Touch</h4>
+        </div>
+        <div class="contact-btn">
+          <button class="signup-btn"><a href="">Sign Up</a></button>
+          <button class="message-btn"><a href="">Message Us</a></button>
+        </div>
+      </section>  
+      
+      
+    <footer>
+      <div class="social-links">
+        <a href="https://github.com/buildweek-sleeptracker/User-Interface" ><i class="fab fa-github"></i></a>
+        <a href= ""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+    </div>
+      <p>&copy; Copyright Sleepmood</p>
+    </footer>
+  </body>
 </html>

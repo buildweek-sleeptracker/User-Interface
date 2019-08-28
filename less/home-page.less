@@ -1,9 +1,376 @@
-.container {
+* {
+    box-sizing: border-box;
+    height: auto;
+  
+  }
+  html {
+    font-size: 62.5%;
+  }
+  html,
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../img/sleepmood.jpg"); 
+    background-attachment: fixed;
+    background-size: cover;
+    animation-name: fade-in;
+    animation-duration: 3s;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Bitter', sans-serif;
+  }
+  
+  #home{
+    nav{
+    width:100%;
     display:flex;
+    justify-content:flex-end;
+    //background-color: #191D37;
+    margin: auto;
+    margin-top: -10px;
+    //border: 1px solid  #B07568;
+    @media only screen and (max-width: 500px){
+      width:100%;
+      margin-top: 4%;
+      display:flex;
+      flex-direction: column;
+    }//closes media q
+      a{
+        font-size:1.4rem;
+        margin:1.5% 2% .3% 1%;
+        padding-left:5%;
+        text-decoration:none;
+        color: #EDEBE3;
+        @media only screen and (max-width: 500px){
+          width: 90%;
+          font-size: 3rem;
+          text-align: center;
+          margin-left:5%;
+          margin-right: 0;
+          padding-bottom: 2%;
+          border-bottom: 2px solid #776D4B;
+        }//closes mediaq
+      }
+      a:hover{
+          color:  #868EC6;
+      }
+    } //closes nav
+  
     
+    header{
+      width:90%;
+      text-align:center;
+      margin-top:5%;
+      margin-left:5%;
+      border-bottom: 2px solid  #776D4B;
+      img {
+        width: 20%;
+      }
+      .header-img{
+        font-size: 8rem;
+        color:  #868EC6;
+        margin-bottom: 0;
+      }
+      .header-img:hover{
+          color: #B07568;
+      }
+      h1{
+        color: #868EC6;
+        font-size: 5rem;
+        margin-bottom:1%;
+      }
+      p{
+        color: #868EC6;
+        font-size:1.7rem;
+        margin-bottom: 4%;
+      }
+     
+    }
+  }
+  
+   
+  
+  .main-content {
+    width:90%;
+    margin: 2% 5% 2% 5%;  
+    // background-color:#393b5d;
+    .dwnld-btn {
+      padding:.5% 3% .5% 3%;
+      
+      margin-bottom: 2%;
+      font-family: 'Roboto', sans-serif;
+      border-radius: 5px ;
+      background-color: #B07568;
+      border:none;
+      @media only screen and (max-width: 500px){
+        padding: 2% 6% 2% 6%;
+        margin-bottom: 4%;
+      }
+        a{
+          font-size:1.4rem;
+          text-decoration:none;
+          color: #191D37;
+          @media only screen and (max-width: 500px){
+            font-size: 1.6rem;
+          }
+        }//closes a
+    }//closes download button
+    .dwnld-btn:hover {
+        background-color:  #191D37;
+        a{
+          color:#EDEBE3;
+        }
+        
+    }
+  
+    .content-section {
+      // width:90%;
+      // margin:0 0 0 5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      @media only screen and (max-width: 500px) {
+        body {
+          width:100%;
+        }
+      }// closes content-section
+
+      .text-content{
+        width:25%;
+        text-align:center;
+        height:90%;
+        margin:1% 1% 2% 0;
+        line-height:2;
+        border-radius: 10px;
+        background-color: #868EC6;
+       @media only screen and (max-width: 500px){
+          width:90%;
+        }
+        .img-content{
+          width:45%;
+        }
+        h2{
+          color:#EDEBE3;
+          font-size: 2.4rem;
+          margin-bottom:10%;
+        }//closes h2
+        p{
+          color:#EDEBE3;
+          font-size: 1.6rem;
+        }
+        li{
+          margin-left: 10%;
+          color:#EDEBE3;
+          font-size: 2rem;
+          line-height: 2.5;
+          @media only screen and (max-width: 500px){
+            margin-left:0;
+          }
+        }
+      } // closes text-content
+      
+    } // closes content-section
+   
+    .tent{
+      height: 70%;
+      padding-bottom:0;
+      border-radius: 5px;
+      @media only screen and (max-width: 500px){
+        display: none;
+      }
+    }//closes tent
+
+    .inverse-content{
+      background: #14162A;
+      border-radius: 10px;
+      border-bottom: 2px solid  #776D4B;
+      margin-bottom:3%;
+      justify-content: space-around;
+    .text-content{
+     //text-align: right;
+      
+    }
+      .img-content{
+        width:45%;
+        padding-right:0;
+        @media only screen and (max-width: 500px){
+          width:100%;
+        }
+      }
+      .graph_image {
+        width:100%;
+        margin: 5%;
+        opacity: .68;
+        border-radius: 20px;
+        @media only screen and (max-width: 500px){
+          width:100%;
+        }
+      }//graph img
+      
+    }//closes inverse content
+    
+.bottom-header{
+    h2{
+        color: #B07568;  
+        text-align: center;
+        font-size: 2.8rem;   
+      }
 }
 
-header {
+
+    .onBoarding{
+      margin-bottom:5%; 
+      display: flex;
+      justify-content:space-evenly;
+      @media only screen and (max-width: 500px){
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+      }//closes media query
+      .destination{
+        width: 25%;
+        // margin:4% 0 0 4%;
+        line-height:1.5;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media only screen and (max-width: 500px){
+          width:90%;
+        }
+        h4{
+          color:#EDEBE3;
+          font-size: 2.4rem;
+          margin-bottom: 10%;
+          @media only screen and (max-width: 500px){
+            margin-bottom: 5%;
+            font-size: 2.4
+          }
+        }// closes h4
+        p{
+          color: #EDEBE3;
+          font-size:2rem;
+          line-height:1.6;
+        }
+        .w3-border{
+            margin: 20% 0;
+            background-color: #F4F4F6;
+            border-radius: 10px;
+        }
+        .w3-1{
+            background-color:#786D4B;
+            border:1px;
+            size:1px;
+            border-radius: 10px;
+        }
+      }//closes destination
+    }//closes on boarding
+      
+      
+   
+  }//closes main-content
+  
+  
+  #contact{
+    width:100%;
+    background-color: #14162A;
+    text-align:center;
+    margin-top:3%;
+    display:flex;
+    flex-direction: column;
+    h4{
+      color: #EDEBE3;
+      margin-top: 5%;
+      font-size:2.5rem;
+      margin-bottom: 2%;
+    }
+    .signup-btn{
+      margin:2% 1% 5% 2%;
+      padding:.5% 2% .5% 2%;
+      font-family: 'Roboto', sans-serif;
+      border-radius:5px;
+      background-color:#B07568;
+      border:none;
+      // margin-left:2%;
+      a{
+        color: #191D37;
+        text-decoration:none;
+        font-size:1.2rem;
+      }//closes a signup
+    
+    }//closes sign up
+    .signup-btn:hover{
+        background-color: #868EC6;
+    }
+    .message-btn{
+      padding: .6% 1% .5% 1.1%;
+      margin-left:4%;
+      font-family: 'Roboto', sans-serif;
+      border:none;
+      background-color:#B07568;
+          border-radius:5px;
+        
+        a{
+          color: #191D37;
+          text-decoration:none;
+        }//closes a
+      } //closes message btn
+
+    .message-btn:hover{
+        background-color: #868EC6;
+    }
+  }
+  
+
+
+  footer{
+    background-color: #14162A;
+    padding-bottom: 2%;
+    text-align:center;
+    p{
+      font-size: 1.5rem;
+      color: #EDEBE3;
+      text-align:center;
+      
+    }
+
+        i{
+            font-size: 2rem;
+            color: #B5B7C5;
+            margin-left:1%;
+            
+          }
+  }// closes footer
+  
+  @keyframes fade-in {
+    from {opacity: 0.1;}
+    to {opacity: 1;}
+  }
+
+  .a-content-section{
     display: flex;
-    justify-content: center;
-}
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #EDEBE3;
+    font-size: 1.6rem;
+    .img-text-content{
+      display: flex;
+      flex-direction: column;
+    img {
+      border-radius: 15px;
+      object-fit: cover;
+      border: 2px solid #868EC6;
+    }
+  }
+   @media only screen and (max-width: 500px){
+     p {
+       font-size:2rem;
+     }
+    img {
+        max-width:100%;
+        
+      }
+    }
+  }
