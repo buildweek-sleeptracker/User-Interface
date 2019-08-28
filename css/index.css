@@ -2,9 +2,12 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #14162A;
+  background-color: #ACB2D8;
   display: flex;
   justify-content: flex-end;
+  background-image: url("../img/sleepmood.jpg");
+  background-attachment: fixed;
+  background-size: cover;
   margin-top: -18px;
   padding: 2px;
   opacity: 1;
@@ -14,15 +17,19 @@ nav {
 @media only screen and (max-width: 500px) {
   nav {
     width: 100%;
-    margin-top: 4%;
+    margin-top: auto;
+    padding: 2px;
     display: flex;
+    position: static;
     flex-direction: column;
+    border-bottom: 0;
   }
 }
 nav a {
   font-size: 1.6rem;
   margin: 1.5% 0 0.3% 1%;
   padding-left: 5%;
+  padding-right: 2%;
   text-decoration: none;
   color: #EDEBE3;
 }
@@ -41,7 +48,6 @@ nav a:hover {
   color: #868EC6;
 }
 footer {
-  width: 100%;
   background-color: #14162A;
   padding-bottom: 2%;
   text-align: center;
@@ -50,6 +56,7 @@ footer p {
   font-size: 1.5rem;
   color: #EDEBE3;
   text-align: center;
+  margin-left: 1%;
 }
 footer i {
   font-size: 2rem;
@@ -113,7 +120,7 @@ h5 {
   margin-top: 8%;
 }
 .main-content .dwnld-btn {
-  padding: 2% 12%;
+  padding: 1.5% 12%;
   margin-bottom: 2%;
   font-family: 'Roboto', sans-serif;
   border-radius: 5px ;
@@ -168,7 +175,7 @@ h5 {
 }
 .main-content .content-section .text-content h2 {
   color: #EDEBE3;
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin-bottom: 10%;
 }
 .main-content .content-section .text-content p {
@@ -389,6 +396,12 @@ h5 {
   text-align: center;
   height: 50%;
   text-shadow: #ACB2D8 1px 0 20px;
+}
+@media (max-width:500px) {
+  .reviews .testimonials p {
+    width: 95%;
+    margin-left: 2%;
+  }
 }
 /**************** ABOUT PAGE *******************/
 header h1 {

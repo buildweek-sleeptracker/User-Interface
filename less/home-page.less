@@ -62,7 +62,7 @@
       margin-top:8%;
     }
     .dwnld-btn {
-      padding:2% 12%;
+      padding:1.5% 12%;
       margin-bottom: 2%;
       font-family: 'Roboto', sans-serif;
       border-radius: 5px ;
@@ -121,7 +121,7 @@
         }//closes img-content
         h2{
           color:@text-color;
-          font-size: 3rem;
+          font-size: 3.2rem;
           margin-bottom:10%;
         }//closes h2
         p{
@@ -341,7 +341,11 @@
     width: 100%;
     text-align: center;
     height: 50%;
-    text-shadow: @blue 1px 0 20px;    
+    text-shadow: @blue 1px 0 20px;   
+    @media @mobile{
+     width:95%;
+     margin-left: 2%;
+    } 
    //text-shadow: 1px 1px 2px @orange, 0 0 1em @blue, 0 0 0.2em @blue;
   }
 
