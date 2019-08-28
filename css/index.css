@@ -1,8 +1,7 @@
 #home nav {
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: flex-end;
-  margin: auto;
   margin-top: -10px;
 }
 @media only screen and (max-width: 500px) {
@@ -14,8 +13,8 @@
   }
 }
 #home nav a {
-  font-size: 1.4rem;
-  margin: 1.5% 2% 0.3% 1%;
+  font-size: 1.6rem;
+  margin: 1.5% 0 0.3% 1%;
   padding-left: 5%;
   text-decoration: none;
   color: #EDEBE3;
@@ -82,64 +81,55 @@ h5 {
 #home header img {
   width: 20%;
 }
-@media only screen and (max-width: 500px) {
-  #home header img {
-    width: 70%;
-  }
-}
-@media only screen and (max-width: 800px) {
+@media (max-width:800px) {
   #home header img {
     width: 40%;
   }
 }
-#home header .header-img {
-  font-size: 8rem;
-  color: #868EC6;
-  margin-bottom: 0;
-}
-#home header .header-img:hover {
-  color: #B07568;
-}
-#home header h1 {
-  color: #868EC6;
-  font-size: 5rem;
-  margin-bottom: 1%;
+@media (max-width:500px) {
+  #home header img {
+    width: 70%;
+  }
 }
 #home header p {
-  color: #868EC6;
-  font-size: 1.7rem;
+  color: #EDEBE3;
+  font-size: 2.5rem;
   margin-bottom: 4%;
 }
 .main-content {
   width: 90%;
-  margin: 2% 5% 2% 5%;
+  margin: 2% 5%;
+}
+.main-content button {
+  margin-top: 8%;
 }
 .main-content .dwnld-btn {
-  padding: 0.5% 3% 0.5% 3%;
+  padding: 2% 15%;
   margin-bottom: 2%;
   font-family: 'Roboto', sans-serif;
   border-radius: 5px ;
   background-color: #B07568;
   border: none;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   .main-content .dwnld-btn {
-    padding: 2% 6% 2% 6%;
+    padding: 2.5% 17%;
     margin-bottom: 4%;
   }
 }
 .main-content .dwnld-btn a {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
   text-decoration: none;
-  color: #191D37;
+  color: #14162A;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   .main-content .dwnld-btn a {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 .main-content .dwnld-btn:hover {
-  background-color: #191D37;
+  background-color: #14162A;
 }
 .main-content .dwnld-btn:hover a {
   color: #EDEBE3;
@@ -149,21 +139,20 @@ h5 {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   .main-content .content-section body {
     width: 100%;
   }
 }
 .main-content .content-section .text-content {
-  width: 25%;
+  width: 45%;
   text-align: center;
-  height: 90%;
+  padding: 0 3%;
   margin: 1% 1% 2% 0;
   line-height: 2;
   border-radius: 10px;
-  background-color: #868EC6;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   .main-content .content-section .text-content {
     width: 90%;
   }
@@ -173,19 +162,26 @@ h5 {
 }
 .main-content .content-section .text-content h2 {
   color: #EDEBE3;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   margin-bottom: 10%;
 }
 .main-content .content-section .text-content p {
   color: #EDEBE3;
-  font-size: 1.6rem;
+  font-size: 2rem;
+}
+.main-content .normal-content {
+  background: #14162A;
+  border-radius: 10px;
+  height: 40%;
 }
 .main-content .tent {
-  height: 70%;
+  width: 400px;
+  height: 90%;
+  margin-top: 7%;
   padding-bottom: 0;
   border-radius: 5px;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   .main-content .tent {
     display: none;
   }
@@ -193,15 +189,31 @@ h5 {
 .main-content .inverse-content {
   background: #14162A;
   border-radius: 10px;
-  border-bottom: 2px solid #776D4B;
   margin-bottom: 3%;
   justify-content: space-around;
+}
+@media (max-width:500px) {
+  .main-content .inverse-content {
+    flex-direction: column-reverse;
+    margin-bottom: 10%;
+  }
+}
+.main-content .inverse-content .text-content {
+  margin-top: 4%;
+}
+@media (max-width:500px) {
+  .main-content .inverse-content .text-content {
+    margin-left: 4%;
+  }
+}
+.main-content .inverse-content .text-content p {
+  font-size: 2rem;
 }
 .main-content .inverse-content .img-content {
   width: 45%;
   padding-right: 0;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   .main-content .inverse-content .img-content {
     width: 100%;
   }
@@ -212,23 +224,23 @@ h5 {
   opacity: 0.68;
   border-radius: 20px;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   .main-content .inverse-content .graph_image {
-    width: 100%;
-    margin: 0px;
+    width: 90%;
+    margin-right: 5%;
   }
 }
 .main-content .bottom-header h2 {
-  color: #B07568;
+  color: #EDEBE3;
   text-align: center;
   font-size: 2.8rem;
 }
 .main-content .onBoarding {
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   display: flex;
   justify-content: space-evenly;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   .main-content .onBoarding {
     width: 100%;
     display: flex;
@@ -242,7 +254,7 @@ h5 {
   flex-direction: column;
   justify-content: space-between;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   .main-content .onBoarding .destination {
     width: 90%;
   }
@@ -252,7 +264,7 @@ h5 {
   font-size: 2.4rem;
   margin-bottom: 10%;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   .main-content .onBoarding .destination h4 {
     margin-bottom: 5%;
     font-size: 2.4;
@@ -269,7 +281,7 @@ h5 {
   border-radius: 10px;
 }
 .main-content .onBoarding .destination .w3-1 {
-  background-color: #786D4B;
+  background-color: #776D4B;
   border: 1px;
   size: 1px;
   border-radius: 10px;
@@ -282,52 +294,99 @@ h5 {
   display: flex;
   flex-direction: column;
 }
-#contact h4 {
-  color: #EDEBE3;
-  margin-top: 5%;
-  font-size: 2.5rem;
-  margin-bottom: 2%;
+#contact img {
+  margin-top: 3%;
+  width: 12%;
+}
+@media (max-width:500px) {
+  #contact img {
+    width: 30%;
+  }
 }
 #contact .signup-btn {
   margin: 2% 1% 5% 2%;
-  padding: 0.5% 2% 0.5% 2%;
+  padding: 0.7% 5%;
   font-family: 'Roboto', sans-serif;
   border-radius: 5px;
   background-color: #B07568;
   border: none;
 }
+@media (max-width:500px) {
+  #contact .signup-btn {
+    padding: 2% 15%;
+  }
+}
 #contact .signup-btn a {
   color: #191D37;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 #contact .signup-btn:hover {
-  background-color: #868EC6;
+  background-color: #ACB2D8;
 }
 #contact .message-btn {
-  padding: 0.6% 1% 0.5% 1.1%;
+  padding: 0.7% 6%;
   margin-left: 4%;
   font-family: 'Roboto', sans-serif;
   border: none;
   background-color: #B07568;
   border-radius: 5px;
 }
+@media (max-width:500px) {
+  #contact .message-btn {
+    display: none;
+  }
+}
 #contact .message-btn a {
-  color: #191D37;
+  color: #14162A;
   text-decoration: none;
+  font-size: 1.8rem;
 }
 #contact .message-btn:hover {
-  background-color: #868EC6;
+  background-color: #ACB2D8;
 }
-.revie {
+.review-header {
+  border-top: 2px solid #776D4B;
+  width: 90%;
+  margin-left: 5%;
+}
+.review-header h3 {
+  font-size: 3.2rem;
+  color: #EDEBE3;
+  text-align: center;
+  margin-top: 3%;
+}
+.reviews {
   display: flex;
-  justify-content: space-evenly;
-  color: white;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
-.revie h4 {
-  color: white;
+.reviews .testimonials {
+  color: #EDEBE3;
+}
+@media (max-width:500px) {
+  .reviews .testimonials {
+    background-color: #14162A;
+  }
+}
+.reviews .testimonials h4 {
+  color: #ACB2D8;
+  font-size: 2.6rem;
+  text-align: center;
+}
+.reviews .testimonials p {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  height: 50%;
+  text-shadow: #ACB2D8 1px 0 20px;
 }
 /**************** ABOUT PAGE *******************/
+header h1 {
+  color: #EDEBE3;
+  font-size: 6rem;
+}
 .a-content-section {
   display: flex;
   flex-wrap: wrap;
@@ -338,17 +397,18 @@ h5 {
 .a-content-section .img-text-content {
   display: flex;
   flex-direction: column;
+  font-size: 2.5rem;
 }
 .a-content-section .img-text-content img {
   border-radius: 15px;
   object-fit: cover;
-  border: 2px solid #868EC6;
+  border: 2px solid #ACB2D8;
 }
 .a-content-section .img-text-content i {
   font-size: 2rem;
   color: #B5B7C5;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   .a-content-section p {
     font-size: 2rem;
   }
