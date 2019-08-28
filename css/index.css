@@ -215,6 +215,7 @@ h5 {
 @media only screen and (max-width: 500px) {
   .main-content .inverse-content .graph_image {
     width: 100%;
+    margin: 0px;
   }
 }
 .main-content .bottom-header h2 {
@@ -317,6 +318,14 @@ h5 {
 }
 #contact .message-btn:hover {
   background-color: #868EC6;
+}
+.revie {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+.revie h4 {
+  color: white;
 }
 /**************** ABOUT PAGE *******************/
 .a-content-section {
