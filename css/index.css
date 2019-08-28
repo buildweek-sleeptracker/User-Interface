@@ -1,26 +1,3 @@
-* {
-  box-sizing: border-box;
-  height: auto;
-}
-html {
-  font-size: 62.5%;
-}
-html,
-body {
-  font-family: 'Roboto', sans-serif;
-  background-image: url("../img/sleepmood.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  animation-name: fade-in;
-  animation-duration: 3s;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Bitter', sans-serif;
-}
 #home nav {
   width: 100%;
   display: flex;
@@ -57,6 +34,44 @@ h5 {
 #home nav a:hover {
   color: #868EC6;
 }
+footer {
+  background-color: #14162A;
+  padding-bottom: 2%;
+  text-align: center;
+}
+footer p {
+  font-size: 1.5rem;
+  color: #EDEBE3;
+  text-align: center;
+}
+footer i {
+  font-size: 2rem;
+  color: #B5B7C5;
+  margin-left: 1%;
+}
+* {
+  box-sizing: border-box;
+  height: auto;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("../img/sleepmood.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  animation-name: fade-in;
+  animation-duration: 3s;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bitter', sans-serif;
+}
 #home header {
   width: 90%;
   text-align: center;
@@ -66,6 +81,16 @@ h5 {
 }
 #home header img {
   width: 20%;
+}
+@media only screen and (max-width: 500px) {
+  #home header img {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #home header img {
+    width: 40%;
+  }
 }
 #home header .header-img {
   font-size: 8rem;
@@ -154,17 +179,6 @@ h5 {
 .main-content .content-section .text-content p {
   color: #EDEBE3;
   font-size: 1.6rem;
-}
-.main-content .content-section .text-content li {
-  margin-left: 10%;
-  color: #EDEBE3;
-  font-size: 2rem;
-  line-height: 2.5;
-}
-@media only screen and (max-width: 500px) {
-  .main-content .content-section .text-content li {
-    margin-left: 0;
-  }
 }
 .main-content .tent {
   height: 70%;
@@ -304,29 +318,7 @@ h5 {
 #contact .message-btn:hover {
   background-color: #868EC6;
 }
-footer {
-  background-color: #14162A;
-  padding-bottom: 2%;
-  text-align: center;
-}
-footer p {
-  font-size: 1.5rem;
-  color: #EDEBE3;
-  text-align: center;
-}
-footer i {
-  font-size: 2rem;
-  color: #B5B7C5;
-  margin-left: 1%;
-}
-@keyframes fade-in {
-  from {
-    opacity: 0.1;
-  }
-  to {
-    opacity: 1;
-  }
-}
+/**************** ABOUT PAGE *******************/
 .a-content-section {
   display: flex;
   flex-wrap: wrap;
@@ -343,11 +335,23 @@ footer i {
   object-fit: cover;
   border: 2px solid #868EC6;
 }
+.a-content-section .img-text-content i {
+  font-size: 2rem;
+  color: #B5B7C5;
+}
 @media only screen and (max-width: 500px) {
   .a-content-section p {
     font-size: 2rem;
   }
   .a-content-section img {
     max-width: 100%;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
   }
 }

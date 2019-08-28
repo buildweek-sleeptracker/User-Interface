@@ -1,0 +1,36 @@
+#home{
+    nav{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    //background-color: #191D37;
+    margin: auto;
+    margin-top: -10px;
+    //border: 1px solid  #B07568;
+    @media only screen and (max-width: 500px){
+      width:100%;
+      margin-top: 4%;
+      display:flex;
+      flex-direction: column;
+    }//closes media q
+      a{
+        font-size:1.4rem;
+        margin:1.5% 2% .3% 1%;
+        padding-left:5%;
+        text-decoration:none;
+        color: #EDEBE3;
+        @media only screen and (max-width: 500px){
+          width: 90%;
+          font-size: 3rem;
+          text-align: center;
+          margin-left:5%;
+          margin-right: 0;
+          padding-bottom: 2%;
+          border-bottom: 2px solid #776D4B;
+        }//closes mediaq
+      }
+      a:hover{
+          color:  #868EC6;
+      }
+    } //closes nav
+}
