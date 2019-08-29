@@ -244,6 +244,11 @@ h5 {
 .main-content .inverse-content .text-content {
   margin-top: 4%;
 }
+@media (max-width:800px) {
+  .main-content .inverse-content .text-content {
+    padding-bottom: 8%;
+  }
+}
 @media (max-width:500px) {
   .main-content .inverse-content .text-content {
     margin-left: 4%;
@@ -255,6 +260,12 @@ h5 {
 .main-content .inverse-content .img-content {
   width: 45%;
   padding-right: 0;
+}
+@media (max-width:800px) {
+  .main-content .inverse-content .img-content {
+    width: auto;
+    margin-right: 9%;
+  }
 }
 @media (max-width:500px) {
   .main-content .inverse-content .img-content {
@@ -269,8 +280,7 @@ h5 {
 }
 @media (max-width:800px) {
   .main-content .inverse-content .graph_image {
-    width: auto;
-    padding-top: 30%;
+    padding-top: 5%;
   }
 }
 @media (max-width:500px) {
@@ -278,6 +288,7 @@ h5 {
     width: 90%;
     margin-right: 5%;
     padding: 0;
+    padding-bottom: 9%;
   }
 }
 .main-content .bottom-header h2 {
