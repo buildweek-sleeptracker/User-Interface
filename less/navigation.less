@@ -1,22 +1,38 @@
-#home{
+
     nav{
-    width:100%;
+    font-family: 'Bitter', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: @blue;
     display:flex;
     justify-content:flex-end;
-    //background-color: #191D37;
-    margin: auto;
-    margin-top: -10px;
-    //border: 1px solid  #B07568;
+    //background-color: #222749;
+    background-image: url("../img/sleepmood.jpg"); 
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: -18px;
+    padding: 2px;
+    opacity: 1;
+    z-index: 10;
+    border-bottom: 1px solid @gold;
+    @media @tablet{
+      padding-top:1%;
+    }
     @media only screen and (max-width: 500px){
       width:100%;
-      margin-top: 4%;
+      margin-top: auto;
+      padding: 2px;
       display:flex;
+      position: static;
       flex-direction: column;
+      border-bottom: 0;
     }//closes media q
       a{
-        font-size:1.4rem;
-        margin:1.5% 2% .3% 1%;
+        font-size:1.6rem;
+        margin:1.5% 0 .3% 1%;
         padding-left:5%;
+        padding-right: 2%;
         text-decoration:none;
         color: #EDEBE3;
         @media only screen and (max-width: 500px){
@@ -32,5 +48,5 @@
       a:hover{
           color:  #868EC6;
       }
-    } //closes nav
-}
+     
+} // closes nav
