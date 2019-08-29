@@ -433,38 +433,22 @@ h5 {
   background-color: #B07568;
   border: none;
 }
+@media (max-width:800px) {
+  #contact .signup-btn {
+    padding: 1.2% 10%;
+  }
+}
 @media (max-width:500px) {
   #contact .signup-btn {
     padding: 2% 15%;
   }
 }
 #contact .signup-btn a {
-  color: #191D37;
-  text-decoration: none;
-  font-size: 2rem;
-}
-#contact .signup-btn:hover {
-  background-color: #ACB2D8;
-}
-#contact .message-btn {
-  padding: 0.7% 4%;
-  margin-left: 4%;
-  font-family: 'Roboto', sans-serif;
-  border: none;
-  background-color: #B07568;
-  border-radius: 5px;
-}
-@media (max-width:500px) {
-  #contact .message-btn {
-    display: none;
-  }
-}
-#contact .message-btn a {
   color: #14162A;
   text-decoration: none;
   font-size: 2rem;
 }
-#contact .message-btn:hover {
+#contact .signup-btn:hover {
   background-color: #ACB2D8;
 }
 /**************** ABOUT PAGE *******************/

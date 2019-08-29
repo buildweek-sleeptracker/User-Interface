@@ -250,7 +250,7 @@
         }//closes p
         .w3-border{
             margin: 20% 0;
-            background-color: #F4F4F6;
+            background-color: @white;
             border-radius: 10px;
         }//closes w3
         .w3-1{
@@ -349,11 +349,14 @@
       border-radius:5px;
       background-color:@orange;
       border:none;
+      @media @tablet{
+        padding: 1.2% 10%;
+      }
       @media @mobile{
         padding:2% 15%;
       }
       a{
-        color: #191D37;
+        color: @darkblue;
         text-decoration:none;
         font-size:2rem;
       }//closes a signup
@@ -362,27 +365,7 @@
     .signup-btn:hover{
         background-color:@blue;
     }//closes sign-up hover
-    .message-btn{
-      padding: .7% 4%;
-      margin-left:4%;
-      font-family: 'Roboto', sans-serif;
-      border:none;
-      background-color:@orange;
-      border-radius:5px;
-      @media @mobile{
-        display:none;
-      }
-        
-        a{
-          color: @darkblue;
-          text-decoration:none;
-          font-size:2rem;
-        }//closes a
-      } //closes message btn
 
-    .message-btn:hover{
-        background-color: @blue;
-    }
   } //closes contact
 
 
