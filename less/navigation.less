@@ -7,7 +7,6 @@
     background-color: @blue;
     display:flex;
     justify-content:flex-end;
-    //background-color: #222749;
     background-image: url("../img/sleepmood.jpg"); 
     background-attachment: fixed;
     background-size: cover;
@@ -19,7 +18,7 @@
     @media @tablet{
       padding-top:1%;
     }
-    @media only screen and (max-width: 500px){
+    @media @mobile{
       width:100%;
       margin-top: auto;
       padding: 2px;
@@ -34,19 +33,19 @@
         padding-left:5%;
         padding-right: 2%;
         text-decoration:none;
-        color: #EDEBE3;
-        @media only screen and (max-width: 500px){
+        color: @text-color;
+        @media @mobile{
           width: 90%;
           font-size: 3rem;
           text-align: center;
           margin-left:5%;
           margin-right: 0;
           padding-bottom: 2%;
-          border-bottom: 2px solid #776D4B;
+          border-bottom: 2px solid @gold;
         }//closes mediaq
       }
       a:hover{
-          color:  #868EC6;
+          color:  @blue;
       }
      
 } // closes nav

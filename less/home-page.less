@@ -165,6 +165,9 @@
       }
       .text-content{
         margin-top:4%;
+        @media @tablet{
+          padding-bottom: 8%;
+        }
         @media @mobile{
           margin-left: 4%;
         }
@@ -175,6 +178,12 @@
       .img-content{
         width:45%;
         padding-right:0;
+        @media @tablet{
+          width: auto;
+          margin-right:9%;
+          
+          
+        }
         @media @mobile{
           width:100%;
         }
@@ -185,11 +194,14 @@
         opacity: .68;
         border-radius: 20px;
         @media @tablet{
-          padding-top:30%;
+          padding-top:5%;
+
         }
         @media @mobile{
           width:90%;
           margin-right:5%;
+          padding: 0;
+          padding-bottom:9%;
         }
       }//graph img
       
@@ -238,7 +250,7 @@
         }//closes p
         .w3-border{
             margin: 20% 0;
-            background-color: #F4F4F6;
+            background-color: @text-color;
             border-radius: 10px;
         }//closes w3
         .w3-1{
@@ -337,11 +349,14 @@
       border-radius:5px;
       background-color:@orange;
       border:none;
+      @media @tablet{
+        padding: 1.2% 10%;
+      }
       @media @mobile{
         padding:2% 15%;
       }
       a{
-        color: #191D37;
+        color: @darkblue;
         text-decoration:none;
         font-size:2rem;
       }//closes a signup
@@ -350,27 +365,7 @@
     .signup-btn:hover{
         background-color:@blue;
     }//closes sign-up hover
-    .message-btn{
-      padding: .7% 4%;
-      margin-left:4%;
-      font-family: 'Roboto', sans-serif;
-      border:none;
-      background-color:@orange;
-      border-radius:5px;
-      @media @mobile{
-        display:none;
-      }
-        
-        a{
-          color: @darkblue;
-          text-decoration:none;
-          font-size:2rem;
-        }//closes a
-      } //closes message btn
 
-    .message-btn:hover{
-        background-color: @blue;
-    }
   } //closes contact
 
 
@@ -399,25 +394,27 @@
       border-radius: 15px;
       object-fit: cover;
       border: 2px solid @blue;
+      @media @tablet{
+      width:40%;
+      }
+      @media @mobile{
+        max-width:100%;
+      }
     }
       i{
         font-size: 2rem;
         color: #B5B7C5;
     }
-  
-  }
-   @media @mobile{
-     p {
-       font-size:2rem;
-     }
-    img {
-        max-width:100%;
-        
-    
+      p {
+        @media @mobile{
+          font-size:2rem;
       }
    
-    }
-  }
+     } //closes p
+  
+  }//closes img text
+   
+  }//closes a content section
 
 
   // Animation

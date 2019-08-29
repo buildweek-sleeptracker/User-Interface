@@ -1,3 +1,11 @@
+@keyframes fade-in {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
 nav {
   font-family: 'Bitter', sans-serif;
   position: fixed;
@@ -20,7 +28,7 @@ nav {
     padding-top: 1%;
   }
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   nav {
     width: 100%;
     margin-top: auto;
@@ -39,7 +47,7 @@ nav a {
   text-decoration: none;
   color: #EDEBE3;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width:500px) {
   nav a {
     width: 90%;
     font-size: 3rem;
@@ -51,7 +59,7 @@ nav a {
   }
 }
 nav a:hover {
-  color: #868EC6;
+  color: #ACB2D8;
 }
 footer {
   background-color: #14162A;
@@ -65,7 +73,7 @@ footer p {
   margin-left: 1%;
 }
 footer i {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #B5B7C5;
   margin-left: 1%;
 }
@@ -244,6 +252,11 @@ h5 {
 .main-content .inverse-content .text-content {
   margin-top: 4%;
 }
+@media (max-width:800px) {
+  .main-content .inverse-content .text-content {
+    padding-bottom: 8%;
+  }
+}
 @media (max-width:500px) {
   .main-content .inverse-content .text-content {
     margin-left: 4%;
@@ -255,6 +268,12 @@ h5 {
 .main-content .inverse-content .img-content {
   width: 45%;
   padding-right: 0;
+}
+@media (max-width:800px) {
+  .main-content .inverse-content .img-content {
+    width: auto;
+    margin-right: 9%;
+  }
 }
 @media (max-width:500px) {
   .main-content .inverse-content .img-content {
@@ -269,13 +288,15 @@ h5 {
 }
 @media (max-width:800px) {
   .main-content .inverse-content .graph_image {
-    padding-top: 30%;
+    padding-top: 5%;
   }
 }
 @media (max-width:500px) {
   .main-content .inverse-content .graph_image {
     width: 90%;
     margin-right: 5%;
+    padding: 0;
+    padding-bottom: 9%;
   }
 }
 .main-content .bottom-header h2 {
@@ -326,7 +347,7 @@ h5 {
 }
 .main-content .onBoarding .destination .w3-border {
   margin: 20% 0;
-  background-color: #F4F4F6;
+  background-color: #EDEBE3;
   border-radius: 10px;
 }
 .main-content .onBoarding .destination .w3-1 {
@@ -420,38 +441,22 @@ h5 {
   background-color: #B07568;
   border: none;
 }
+@media (max-width:800px) {
+  #contact .signup-btn {
+    padding: 1.2% 10%;
+  }
+}
 @media (max-width:500px) {
   #contact .signup-btn {
     padding: 2% 15%;
   }
 }
 #contact .signup-btn a {
-  color: #191D37;
-  text-decoration: none;
-  font-size: 2rem;
-}
-#contact .signup-btn:hover {
-  background-color: #ACB2D8;
-}
-#contact .message-btn {
-  padding: 0.7% 4%;
-  margin-left: 4%;
-  font-family: 'Roboto', sans-serif;
-  border: none;
-  background-color: #B07568;
-  border-radius: 5px;
-}
-@media (max-width:500px) {
-  #contact .message-btn {
-    display: none;
-  }
-}
-#contact .message-btn a {
   color: #14162A;
   text-decoration: none;
   font-size: 2rem;
 }
-#contact .message-btn:hover {
+#contact .signup-btn:hover {
   background-color: #ACB2D8;
 }
 /**************** ABOUT PAGE *******************/
@@ -476,16 +481,23 @@ header h1 {
   object-fit: cover;
   border: 2px solid #ACB2D8;
 }
+@media (max-width:800px) {
+  .a-content-section .img-text-content img {
+    width: 40%;
+  }
+}
+@media (max-width:500px) {
+  .a-content-section .img-text-content img {
+    max-width: 100%;
+  }
+}
 .a-content-section .img-text-content i {
   font-size: 2rem;
   color: #B5B7C5;
 }
 @media (max-width:500px) {
-  .a-content-section p {
+  .a-content-section .img-text-content p {
     font-size: 2rem;
-  }
-  .a-content-section img {
-    max-width: 100%;
   }
 }
 @keyframes fade-in {
