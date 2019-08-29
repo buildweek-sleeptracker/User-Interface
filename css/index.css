@@ -500,11 +500,3 @@ header h1 {
     font-size: 2rem;
   }
 }
-@keyframes fade-in {
-  from {
-    opacity: 0.1;
-  }
-  to {
-    opacity: 1;
-  }
-}
